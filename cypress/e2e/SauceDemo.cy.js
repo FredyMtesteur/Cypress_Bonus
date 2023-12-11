@@ -8,8 +8,8 @@ let postalcode = faker.location.zipCode("#####");
 
 // Prérequis
 beforeEach("Accès au site saucedemo", () => {
-  cy.visit("https://www.saucedemo.com"); //visit site
-
+  //visiter le site
+  cy.visit("https://www.saucedemo.com");
   //Login
   cy.get('[data-test="username"]').type("standard_user"); //username
   cy.get('[data-test="password"]').type("secret_sauce"); //password
@@ -65,4 +65,9 @@ describe("Scénarios de test site saucedemo.com", () => {
         "Your order has been dispatched, and will arrive just as fast as the pony can get there!"
       ); //Message 2
   });
+});
+
+//Message de fin de run
+before("Message log", () => {
+  cy.log("La commande a été validée !");
 });
