@@ -1,0 +1,14 @@
+{
+  "name": "cypress_bonus",
+  "version": "1.0.0",
+  "description": "Projet Bonus KATA 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Frédy",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.6.1"
+  }
+}
