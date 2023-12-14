@@ -2,6 +2,7 @@ const { defineConfig } = require("cypress");
 
 // Paramètres de config appliqués dans cypress open menu (gauche) Settings / Project settings
 module.exports = defineConfig({
+  projectId: 'hvecb1',
   e2e: {
     chromeWebSecurity: false,
     baseUrl: null, // Possibilité de mettre une base d'url par défaut pour visiter le site
